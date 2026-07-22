@@ -355,6 +355,26 @@
             text-align: center;
         }
 
+        .social-btn.email-btn {
+            flex-direction: column;
+            gap: 3px;
+            white-space: normal;
+            text-align: center;
+        }
+
+        .email-btn-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .email-btn-address {
+            font-size: 0.6rem;
+            color: rgba(0, 255, 65, 0.4);
+            font-weight: 400;
+        }
+
         /* ========== FOOTER ========== */
         .footer {
             text-align: center;
@@ -536,8 +556,12 @@
                     class="social-btn">
                     <i class="fa-brands fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="mailto:gorkemyucal@outlook.com" class="social-btn">
-                    <i class="fa-solid fa-envelope"></i> E-Posta Gönder
+                <a href="mailto:gorkemyucal@outlook.com" class="social-btn email-btn">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="email-btn-text">
+                        E-Posta Gönder
+                        <small class="email-btn-address">gorkemyucal@outlook.com</small>
+                    </span>
                 </a>
             </div>
         </section>
